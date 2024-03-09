@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: #3aafa9;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.title{
+    width: 30%;
+    text-align: center;
+}
+
+
+.title h2{
+    font-size: 6vw;
+    font-family: "Signika", sans-serif;
+}
+
+.title p{
+    font-size: 20px;
+    font-family: "signika", sans-serif;
+}
+
+/* titlearea end */
+
+.box{
+    background-color: white;
+    padding: 20px;
+    width: 500px;
+}
+
+.quote{
+    font-size: 25px;
+    padding: 15px;
+    height: 120px;
+}
+
+#author{
+    color: #004aad;
+    position: relative;
+    left: 5%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.textarea{
+    width: 80%;
+    height: 140px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.fa-solid{
+    font-size: 40px;
+    color: #d9d9d9;
+}
+
+.fa-quote-left{
+    position: relative;
+    right: 45%;
+    /* bottom: 10%;
+    right: 8%; */
+    /* top: 40px;
+    left: 50px; */
+}
+
+.fa-quote-right{
+    position: relative;
+    float: right;
+    bottom: 35%;
+    right: 5%;
+    /* left: 3%;
+    top: 10%; */
+}
+
+.buttonsarea{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    gap: 20px;
+    margin-top: 90px;
+}
+
+.new-quote{
+    background-color: #004aad;
+    border: none;
+    margin-left: auto;
+    padding: 13px;
+    border-radius: 20px;
+}
+
+.buttonsarea .fa-solid{
+    color: black;
+    font-size: 20px;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 960px){
+    .main{
+        flex-direction: column;
+    }
+    .title{
+        width: 80%;
+    }
+    .title h2{
+        font-size: 9vw;
+    }
+    .title p{
+        font-size: 18px;
+    }
+    .box{
+        width: 60vw;
+    }
+
+    .buttonsarea{
+        width: 95%;
+        /* margin-left: 90px; */
+    }
+
+    .fa-quote-left{
+        font-size: 5vw;
+    }
+    .fa-quote-right{
+        font-size: 5vw;
+    }
+    .quote{
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .quote{
+        font-size: 22px;
+    }
+
+    #author{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .quote {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .quote{
+        font-size: 4vw;
+    }
+}
